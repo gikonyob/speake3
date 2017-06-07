@@ -15,7 +15,7 @@ of espeak tts engine in Python.
 ### Install commands
 If pip is installed simply do;
 ````
- pip install speake3
+ pip3 install speake3
 ````
 
 
