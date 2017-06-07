@@ -36,7 +36,8 @@ A simple script using speake module;
 You can view the version of espeak installed;
 
 ````
- >>> engine.get("version")
+ >>> version = engine.get("version")
+ >>> print(version)
 ````
 
 You  can view voices installed in your system both generally and specifially;
@@ -44,10 +45,10 @@ You  can view voices installed in your system both generally and specifially;
 ````
  >>> voices = engine.get("voices") # General
  >>> for voice in voices:
- >>>	print voice 
+ >>>	print(voice) 
  >>> voices_2 = engine.get("voices", "en") # Specific
  >>> for voice in voices_2:
- >>>	print voice
+ >>>	print(voice)
  ````
 
  You can set properties using set method;
