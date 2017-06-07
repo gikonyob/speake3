@@ -1,6 +1,6 @@
 # Speake3
 
-Speake library provides a wrapper around Espeak to easily
+Speake3 library provides a wrapper around Espeak to easily
 write efficient programs utilizing the text-to-speech functionalities
 of espeak tts engine in Python.
 
