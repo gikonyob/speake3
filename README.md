@@ -29,7 +29,7 @@ A simple script using speake module;
 >>> engine.set('voice', 'en')
 >>> engine.set('speed', '107')
 >>> engine.set('pitch', '99')
->>> engine.say("Hello world!") #String to b spoken
+>>> engine.say("Hello world!") #String to be spoken
 >>> engine.talkback()
 ````
 
