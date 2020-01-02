@@ -54,7 +54,8 @@ class Speake:
         self.status_output = ''
         self.status_error = ''
         # Condition to check if espeak-tts-engine is installed
-        if not os.path.exists('/usr/bin/espeak'):
+        espeak_exists = subprocess.run(['which', 'espeak'], stdout=subprocess.PIPE).stdout.decode('utf-8') != ''
+        if not espeak_exists:
             raise OSError("Espeak text-to-speech engine is not installed in this system!")
 
     def __listoutput(self, voices):
